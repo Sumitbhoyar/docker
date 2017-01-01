@@ -1,0 +1,50 @@
+sudo docker version
+  get docker version
+
+sudo docker -D info
+  get docker, imager and container details
+
+sudo docker pull busybox:ubuntu-14.04
+  pull image
+
+sudo docker search mysql
+  Search docker images
+
+sudo docker run -t -i busybox:ubuntu-14.04
+  Run image interactively
+
+sudo docker stop da1c0f7daa2a
+sudo docker start da1c0f7daa2a
+  Stop container
+  Start container
+
+sudo docker attach 30e3751e553e
+  Attach to running conainer
+
+sudo service docker status
+  starting docker service
+
+sudo docker pause c439077aa80a
+sudo docker unpause c439077aa80a
+  Pause/Unpause conainer
+
+sudo docker rm -f $(sudo docker ps -a -q)
+  Delete all containers
+
+sudo docker rm 7473f2568add
+  Remove container
+
+sudo docker rmi -f $(sudo docker images -q)
+  Delete all images
+
+sudo docker images -a
+  List all images
+
+sudo docker ps -a
+  List all containers
+
+sudo docker ps
+  List all running containers
+
+sudo docker diff d5ad60f174d3
+  Difference from the image
